@@ -5,17 +5,15 @@ javascript style guide
 
 always 4 spaces
 
-bad:
 ```javascript
+// bad
 {
-  const foo = 'bar';
+  const name = 'John';
 }
-```
 
-good:
-```javascript
+// good
 {
-    const foo = 'bar';
+    const name = 'John';
 }
 ```
 
@@ -23,66 +21,48 @@ good:
 
 use const, sometimes let
 
-bad:
 ```javascript  
-var foo = 'bar';
-```
+// bad
+var name = 'John';
 
-good:
-```javascript
-const foo = 'bar';
-```
+// good
+const name = 'John';
 
-good:
-```javascript
-let foo;
-foo = 'bar';
+// good
+let name;
+name = 'John';
 ```
 
 ## alignment
 
 no single const
 
-bad:
 ```javascript  
-const foo = 'bar',
-      val = 123;
-```
+// bad
+const name = 'Jonh',
+      age = 31;
 
-bad:
-```javascript  
-const foo = 'bar',
-    val = 123;
-```
+// bad
+const name = 'Jonh',
+    age = 31;
 
-good:
-```javascript
-const foo = 'bar';
-const val = 123;
+// good
+const name = 'Jonh';
+const age = 31;
 ```
 
 no values alignment
 
-bad:
 ```javascript  
-const foo = 'bar',
-      val = 123;
-```
+// bad
+const superLongName = 'Jonh';
+const age =           31;
 
-bad:
-```javascript  
-const foo =                   'bar',
-const superLongVariableName = 'Jonh';
-```
+// bad
+const superLongName = 'Jonh';
+const age           = 31;
 
-
-```javascript  
-const foo                   = 'bar',
-const superLongVariableName = 'Jonh';
-```
-
-good:
-```javascript
-const foo = 'bar';
-const superLongVariableName = 123;
+// good
+const superLongName = 'Jonh';
+const age = 31;
 ```
